@@ -1,0 +1,113 @@
+  2025-07-10T13:21:48.684278Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 12
+  messages:
+
+[1mUser[0m:
+"summmarize it"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-10T13:21:49.614712Z  WARN alith_interface::requests::completion::request: e: ClientError(Reqwest(reqwest::Error { kind: Request, url: "https://5289ab22f1997182473742b6d93cfba727f0a9b1-8000.dstack-prod8.phala.network//v1/chat/completions", source: hyper_util::client::legacy::Error(SendRequest, hyper::Error(Io, Custom { kind: UnexpectedEof, error: "peer closed connection without sending TLS close_notify: https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof" })) }))
+    at crates/interface/src/requests/completion/request.rs:96
+
+  2025-07-10T13:23:01.204216Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 12
+  messages:
+
+[1mUser[0m:
+"summmarize it"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-10T13:23:05.079798Z  WARN alith_interface::requests::completion::request: e: ClientError(ApiError(ApiError { message: "Error processing request for req: file_id=11 file_url=None limit=3 query='summmarize it'. Error: Decryption failed", type: Some("internal_error"), param: None, code: None }))
+    at crates/interface/src/requests/completion/request.rs:96
+
+  2025-07-10T13:23:41.346891Z  INFO alith_interface::requests::completion::request: 
+CompletionRequest:
+  total_prompt_tokens: 12
+  messages:
+
+[1mUser[0m:
+"summmarize it"
+
+  stop_sequences: []
+  grammar_string: None
+  config: 
+    model_ctx_size: 8192
+    inference_ctx_size: 4096
+    requested_response_tokens: Some(4076)
+    actual_request_tokens: Some(4076)
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    retry_after_fail_n_times: 3
+    increase_limit_on_fail: false
+    cache_prompt: false
+  tools: []
+    at crates/interface/src/requests/completion/request.rs:93
+
+  2025-07-10T13:23:58.471434Z  INFO alith_interface::requests::completion::request: 
+CompletionResponse:
+    content: "Based on the attachment, here's a concise summary:\n\n1.  **Key Characters & Abilities:**\n    *   Mentions ninjas like **Kisame Hoshigaki** (wields Samehada), **Obito Uchiha** (space-time techniques), **Zetsu** (plant-based intel), **Kakashi Hatake** (Sixth Hokage, Sharingan, Chidori, 1000+ copied techniques), **Naruto Uzumaki** (Six Paths Sage Mode).\n    *   Highlights powerful abilities like **Six Paths Sage Mode** (requires tailed beast chakra, grants flight, Truth-Seeking Balls).\n\n2.  **Major Clans & Bloodlines:**\n    *   Details major clans and their unique Kekkei Genkai:\n        *   **Uchiha:** Sharingan (copying, genjutsu), Mangekyō Sharingan (notable members: Madara, Itachi, Sasuke, Obito).\n        *   **Hyūga:** Byakugan (360° vision, chakra points; members: Hinata, Neji).\n        *   **Senju:** Strong life force, versatile chakra (members: Hashirama, Tsunade).\n        *   **Uzumaki:** Strong life force, sealing techniques.\n\n3.  **Hidden Villages:**\n    *   Focuses on notable Hidden Villages:\n        *   **Konohagakure (Hidden Leaf):** Land of Fire, led by Hokage, Hokage Rock, Academy, ANBU. Home to clans like Uchiha, Hyūga, Uzumaki, Senju.\n        *   **Sunagakure (Hidden Sand):** Land of Wind, led by Kazekage, desert environment, puppet techniques, Wind Release specialists (notable ninja: Gaara).\n\n4.  **Goals & Themes:**\n    *   Lists Akatsuki's goals: Capture tailed beasts, create world peace through fear, eliminate war and hatred.\n    *   Notes the series' core themes: Overcoming past trauma, friendship, sacrifice, breaking the cycle of hatred, working together for a better future.\n\n5.  **Potential AI Uses:**\n    *   Identifies the Naruto universe as a valuable dataset for AI training in:\n        *   Character analysis & development.\n        *   World-building & lore creation.\n        *   Power system design.\n        *   Political/social structure analysis.\n        *   Narrative planning.\n        *   Cultural/philosophical exploration.\n\n**In essence:** The attachment provides a structured overview of Ninja Ranks, Key Ninja & Abilities (focusing on high-level characters and modes), Major Clans & Bloodlines, Hidden Villages (especially Konoha and Suna), Villain Goals (Akatsuki), and concludes by highlighting the series' rich themes and its suitability as training data for AI modeling various narrative and character elements."
+    finish_reason: Eos
+    generation_settings: 
+    model: "deepseek/deepseek-r1-0528"
+    frequency_penalty: None
+    presence_penalty: 0.0
+    temperature: 1.0
+    top_p: None
+    n_choices: 1
+    n_predict: Some(4076)
+    n_ctx: 4096
+    logit_bias: None
+    grammar: None
+    stop_sequences: []
+    timing_usage: 
+    total_time: 17.125039834s
+    prompt_processing_t: None
+    generation_t: None
+    prompt_tok_per_ms: None
+    prompt_tok_per_sec: None
+    generation_tok_per_ms: None
+    generation_tok_per_sec: None
+    token_usage: 
+    tokens_cached: None
+    prompt_tokens: 562
+    completion_tokens: 936
+    total_tokens: 1498
+    token_calls: None
+    at crates/interface/src/requests/completion/request.rs:111
+
