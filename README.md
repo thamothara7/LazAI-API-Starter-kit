@@ -3,16 +3,25 @@
 ## Installation
 
 To avoid dependency conflicts and keep your environment clean, create and activate a Python virtual environment before installing any packages:
-
+### Mac OS:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
-
-## Install Alith
+### Windows OS:
+```bash
+python -m venv venv
+venv/Scripts/activate
+```
+## Install Alith Mac
 
 ```bash
 python3 -m pip install alith -U
+```
+## Install Alith Windows
+
+```bash
+python -m pip install alith -U
 ```
 
 ## Start Inference Server
