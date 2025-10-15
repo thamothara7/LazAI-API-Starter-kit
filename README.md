@@ -1,13 +1,14 @@
 # Demo Project
 
 ## Installation
+To avoid dependency conflicts and keep your environment clean, create and activate a Python virtual environment before installing any packages.
 
-To avoid dependency conflicts and keep your environment clean, create and activate a Python virtual environment before installing any packages:
-### Mac OS:
+### macOS
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
+
 ### Windows OS:
 ```bash
 python -m venv venv
@@ -34,7 +35,19 @@ Before running the inference script, ensure you have an inference server running
 The inference server must be registered with LazAI. 
 
 
-## Set Environment Variables
+## Environment Setup
+
+Create a .env file in your project root to securely store your private keys and API keys.
+
+Example .env file
+ ```
+PRIVATE_KEY=<your wallet private key>
+GROQ_API_KEY=<your groq api key>
+```
+Important:
+
+Never share or upload your .env file to GitHub.
+Ensure .env is listed in your .gitignore file.
 
 ### For OpenAI/ChatGPT API:
 
@@ -47,3 +60,16 @@ export PRIVATE_KEY=<your wallet private key>
 ```bash
 python inference.py
 ``` 
+### Quick Setup Summary:
+
+1. Create and activate a virtual environment
+2. Install dependencies (alith)
+3. Set up your .env file
+4. Start your inference server
+5. Run python inference.py
+
+### Troubleshooting
+
+Dependency errors: Reinstall packages inside your virtual environment
+Missing .env variables: Ensure .env is in your project root and properly formatted
+Server errors: Make sure your inference server is registered with LazAI and accessible
