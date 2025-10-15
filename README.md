@@ -1,5 +1,15 @@
 # Demo Project
 
+## Git Clone
+
+First, clone this repository to your local machine:
+
+```bash
+git clone https://github.com/0xLazAI/LazAI-API-Starter-kit.git
+cd LazAI-API-Starter-kit
+```
+
+
 ## Installation
 To avoid dependency conflicts and keep your environment clean, create and activate a Python virtual environment before installing any packages.
 
