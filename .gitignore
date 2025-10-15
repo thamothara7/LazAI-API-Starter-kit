@@ -3,3 +3,4 @@ llm_logs/
 __pycache__/
 .env
 *.pyc
+.env
