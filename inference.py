@@ -35,19 +35,17 @@ except Exception:
         print(" Error adding user or depositing:", e)
 
 
-file_id = 10  
 
-url = "https://api.groq.com/openai"  #change the URL if needed
+file_id = 10
+url = "https://api.groq.com/openai"
 
-# Extra headers: combine LazAI settlement headers + Groq key
 extra_headers = client.get_request_headers(LAZAI_IDAO_ADDRESS, file_id=file_id)
 extra_headers["Authorization"] = f"Bearer {GROQ_API_KEY}"
 
-# Create Groq Agent
 agent = Agent(
-    model="deepseek/deepseek-r1-0528",  #Change the model you used 
+    model="llama-3.1-8b-instant",  # Current  model
     base_url=f"{url}/v1",
     extra_headers=extra_headers,
 )
 
-print(agent.prompt("what is LazAi"))
+print(agent.prompt("what is LazAI"))
